@@ -24,6 +24,6 @@ WHERE replacement_cost =
 	SELECT MIN(replacement_cost) FROM film
 );
 
-
-SELECT customer_id, (SELECT COUNT(*) FROM payment WHERE customer_id = (SELECT DISTINCT customer_id FROM payment ))
-FROM payment;
+--4.Soru
+SELECT first_name, last_name, count FROM customer
+INNER JOIN (SELECT customer_id, COUNT(*) FROM payment GROUP BY customer_id) secondJoin ON customer.customer_id = secondJoin.customer_id
