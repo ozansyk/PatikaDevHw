@@ -26,4 +26,4 @@ WHERE replacement_cost =
 
 --4.Soru
 SELECT first_name, last_name, count FROM customer
-INNER JOIN (SELECT customer_id, COUNT(*) FROM payment GROUP BY customer_id) secondJoin ON customer.customer_id = secondJoin.customer_id
+INNER JOIN (SELECT customer_id, COUNT(*) FROM payment GROUP BY customer_id) secondJoin ON customer.customer_id = secondJoin.customer_id;
