@@ -25,5 +25,5 @@ WHERE replacement_cost =
 );
 
 
-SELECT customer_id, (SELECT COUNT(*) FROM payment WHERE customer_id = customer_id)
+SELECT customer_id, (SELECT COUNT(*) FROM payment WHERE customer_id = (SELECT DISTINCT customer_id FROM payment ))
 FROM payment;
