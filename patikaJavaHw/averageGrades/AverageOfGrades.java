@@ -16,16 +16,17 @@ public class AverageOfGrades {
 		System.out.print("Lutfen Kimya notunuzu giriniz: ");
 		double kimya = input.nextDouble();
 
-		System.out.print("Lutfen Türkçe notunuzu giriniz: ");
+		System.out.print("Lutfen TÃ¼rkÃ§e notunuzu giriniz: ");
 		double turkce = input.nextDouble();
 
 		System.out.print("Lutfen Tarih notunuzu giriniz: ");
 		double tarih = input.nextDouble();
 
-		System.out.print("Lutfen Müzik notunuzu giriniz: ");
+		System.out.print("Lutfen MÃ¼zik notunuzu giriniz: ");
 		double muzik = input.nextDouble();
 		
-		System.out.println(((mat+fizik+kimya+turkce+tarih+muzik)/6)>60?"Sınıfı geçtiniz!":"Sınıfta kaldınız!");
+		System.out.println(((mat+fizik+kimya+turkce+tarih+muzik)/6)>60?"SÄ±nÄ±fÄ± geÃ§tiniz!":"SÄ±nÄ±fta kaldÄ±nÄ±z!");
+		input.close();
 	}
 
 }
