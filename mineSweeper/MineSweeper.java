@@ -27,7 +27,7 @@ public class MineSweeper {
 			}
 		}
 		
-		System.out.println("Mayınların konumu");
+		System.out.println("MayÃ½nlarÃ½n konumu");
 		for(String[] i : mine) {
 			for(String j : i) {
 				System.out.print(j + " ");
@@ -36,7 +36,7 @@ public class MineSweeper {
 		}
 		System.out.println("===========================");
 		
-		System.out.println("Mayın Tarlası Oyuna Hoşgeldiniz");
+		System.out.println("MayÃ½n TarlasÃ½ Oyuna HoÃ¾geldiniz");
 		Scanner input = new Scanner(System.in);
 		
 		for(String[] i : copyMine) {
@@ -45,9 +45,9 @@ public class MineSweeper {
 			}
 			System.out.println();
 		}
-		System.out.print("Satır giriniz: ");
+		System.out.print("SatÃ½r giriniz: ");
 		int c = input.nextInt();
-		System.out.print("Sütun giriniz: ");
+		System.out.print("SÃ¼tun giriniz: ");
 		int r = input.nextInt();
 		
 		int spaceCount = 0;
@@ -74,14 +74,14 @@ public class MineSweeper {
 				System.out.println();
 			}
 			
-			System.out.print("Satır giriniz: ");
+			System.out.print("SatÃ½r giriniz: ");
 			c = input.nextInt();
-			System.out.print("Sütun giriniz: ");
+			System.out.print("SÃ¼tun giriniz: ");
 			r = input.nextInt();
 		}
 		
 		if(isWin) {
-			System.out.println("Tebrikler, oyunu kazandınız! Mayınlı bölge:");
+			System.out.println("Tebrikler, oyunu kazandÃ½nÃ½z! MayÃ½nlÃ½ bÃ¶lge:");
 			for(String[] i : mine) {
 				for(String j : i) {
 					System.out.print(j + " ");
@@ -89,8 +89,8 @@ public class MineSweeper {
 				System.out.println();
 			}
 		} else {
-			System.out.println("Mayına bastınız, kaybettiniz! Bayınlı bölge:");
-			for(String[] i : copyMine) {
+			System.out.println("MayÃ½na bastÃ½nÃ½z, kaybettiniz! BayÃ½nlÃ½ bÃ¶lge:");
+			for(String[] i : mine) {
 				for(String j : i) {
 					System.out.print(j + " ");
 				}
