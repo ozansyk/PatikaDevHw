@@ -89,7 +89,7 @@ public class MineSweeper {
 				System.out.println();
 			}
 		} else {
-			System.out.println("Mayýna bastýnýz, kaybettiniz! Bayýnlý bölge:");
+			System.out.println("Mayýna bastýnýz, kaybettiniz! Mayýnlý bölge:");
 			for(String[] i : mine) {
 				for(String j : i) {
 					System.out.print(j + " ");
