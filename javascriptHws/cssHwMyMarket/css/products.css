@@ -1,0 +1,32 @@
+h1 {
+    color: red;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: royalblue;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 14px;
+    color: sandybrown;
+}
+
+a {
+    margin: 5px;
+}
+
+p1 {
+    font-size: 14px;
+    font: bold;
+}
+
+ol {
+    width: 100px;
+}
+
+img {
+    width: 200px;
+}
